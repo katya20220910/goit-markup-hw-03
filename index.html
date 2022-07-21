@@ -11,31 +11,41 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./css/styles.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
     <header class="header">
-      <a class="logo" href="/" lang="en">Web<span class="logo-part">Studio</span></a>
-      <nav class="nav">
-        <ul class="list">
-          <li><a class="link nav-link-current" href="index.html">Студия</a></li>
-          <li><a class="link nav-link" href="portfolio.html">Портфолио</a></li>
-          <li><a class="link nav-link" href="">Контакты</a></li>
+      <div class="container header-container">
+        <a class="logo logo-header" href="/" lang="en">Web<span class="logo-part">Studio</span></a>
+        <nav class="nav">
+          <ul class="list nav-list">
+            <li class="header-nav"><a class="link nav-link-current" href="index.html">Студия</a></li>
+            <li class="header-nav"><a class="link nav-link" href="portfolio.html">Портфолио</a></li>
+            <li class="header-nav"><a class="link nav-link" href="">Контакты</a></li>
+          </ul>
+        </nav>
+        <ul class="list list-nav-contact">
+          <li class="nav-contact">
+            <a class="link nav-link-contact" href="mailto:info@devstudio.com">info@devstudio.com</a>
+          </li>
+          <li class="nav-contact"><a class="link nav-link-contact" href="tel:++380961111111">+38 096 111 11 11</a></li>
         </ul>
-      </nav>
-      <ul class="list">
-        <li><a class="link nav-contact" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-        <li><a class="link nav-contact" href="tel:++380961111111">+38 096 111 11 11</a></li>
-      </ul>
+      </div>
     </header>
     <main>
       <section class="hero">
-        <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
-        <button type="button" class="button">Заказать услугу</button>
+        <div class="container">
+          <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
+          <button type="button" class="button">Заказать услугу</button>
+        </div>
       </section>
       <section class="about">
-        <h2 hidden>Принципы работы</h2>
-        <ul class="list">
+        <div class="container about-container">
+        <h2 class="visually-hidden">Принципы работы</h2>
+        <ul class="list about-list">
           <li>
             <h3 class="about-title">Внимание к деталям</h3>
             <p class="about-text">
@@ -61,52 +71,66 @@
             </p>
           </li>
         </ul>
+        </div>
       </section>
       <section class="work">
+        <div class="container">
         <h2 class="title-section">Чем мы занимаемся</h2>
-        <ul class="list">
-          <li>
+        <ul class="list work-list">
+          <li class="work-iteam">
             <img src="./images/image1.jpg" alt="Создания кода" width="370" height="294" />
           </li>
-          <li>
+          <li class="work-iteam">
             <img src="./images/image2.jpg" alt="Мобильные приложения" width="370" height="294" />
           </li>
-          <li>
+          <li class="work-iteam">
             <img src="./images/image3.jpg" alt="Графические решения" width="370" height="294" />
           </li>
         </ul>
+        </div>
       </section>
       <section class="team">
+        <div class="container">
         <h2 class="title-section">Наша команда</h2>
-        <ul class="list">
-          <li>
+        <ul class="list team-list">
+          <li class="team-card">
             <img src="./images/image4.jpg" alt="Игорь Демьяненко" width="270" height="260" />
+            <div class="team-wrapper">
             <h3 class="team-name">Игорь Демьяненко</h3>
-            <p class="team-proffesion">Product Designer</p>
+            <p class="team-proffesion" lang="en">Product Designer</p>
+            </div>
           </li>
-          <li>
+          <li class="team-card">
             <img src="./images/image5.jpg" alt="Ольга Репина" width="270" height="260" />
+            <div class="team-wrapper">
             <h3 class="team-name">Ольга Репина</h3>
-            <p class="team-proffesion">Frontend Developer</p>
+            <p class="team-proffesion" lang="en">Frontend Developer</p>
+            </div>
           </li>
-          <li>
+          <li class="team-card">
             <img src="./images/image6.jpg" alt="Николай Тарасов" width="270" height="260" />
+            <div class="team-wrapper">
             <h3 class="team-name">Николай Тарасов</h3>
-            <p class="team-proffesion">Marketing</p>
+            <p class="team-proffesion" lang="en">Marketing</p>
+            </div>
           </li>
-          <li>
+          <li class="team-card">
             <img src="./images/image7.jpg" alt="Михаил Ермаков" width="270" height="260" />
+            <div class="team-wrapper">
             <h3 class="team-name">Михаил Ермаков</h3>
-            <p class="team-proffesion">UI Designer</p>
+            <p class="team-proffesion" lang="en">UI Designer</p>
+            </div>
           </li>
         </ul>
+        </div>
       </section>
     </main>
     <footer class="footer">
-      <a class="logo" href="/" lang="en">Web<span class="logo-partfooter">Studio</span></a>
+      <div class="container footer-container">
+      <a class="logo logo-footer" href="/" lang="en">Web<span class="logo-partfooter">Studio</span></a>
       <address class="addres">
-        <ul class="list">
-          <li>
+        <ul class="list list-footer">
+          <li class="list-iteam-footer">
             <a
               class="link link-addres"
               href="https://goo.gl/maps/phjNTahfktrUzCqq9"
@@ -115,10 +139,11 @@
               >г. Киев, пр-т Леси Украинки, 26</a
             >
           </li>
-          <li><a class="link link-contact" href="mailto:info@example.com">info@example.com</a></li>
-          <li><a class="link link-contact" href="tel:++380991111111">+38 099 111 11 11</a></li>
+          <li class="list-iteam-footer"><a class="link link-contact" href="mailto:info@example.com">info@example.com</a></li>
+          <li class="list-iteam-footer"><a class="link link-contact" href="tel:++380991111111">+38 099 111 11 11</a></li>
         </ul>
       </address>
+      </div>
     </footer>
   </body>
 </html>
