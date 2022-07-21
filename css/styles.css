@@ -64,7 +64,7 @@ img {
   font-weight: 500;
   line-height: calc(16 / 14);
   letter-spacing: 0.02em;
-  border-bottom: 1рх solid var(--border-header);
+  border: 1px solid var(--border-header)
 }
 
 .header-container {
