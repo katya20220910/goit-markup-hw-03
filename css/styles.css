@@ -255,7 +255,7 @@ img {
   display: flex;
   flex-wrap: wrap;
   gap: var(--indent-iteams);
-  flex-basis: calc((100% - var(--indent-iteams) * (var(--iteams) - 1)) / 4);
+  flex-basis: calc((100% - var(--indent-iteams) * (var(--iteams) - 1)) / var(--iteams));
 }
 
 .team-card {
