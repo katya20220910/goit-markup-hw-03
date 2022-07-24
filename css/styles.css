@@ -72,6 +72,7 @@ img {
   flex-basis: calc((100% - var(--indent-grid) * (var(--item) - 1)) / var(--item));
 }
 
+
 /* Навигация */
 
 .header {
