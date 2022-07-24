@@ -62,6 +62,16 @@ img {
   padding-bottom: 94px;
 }
 
+.list-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--indent-grid);
+}
+
+.grid-cards {
+  flex-basis: calc((100% - var(--indent-grid) * (var(--item) - 1)) / var(--item));
+}
+
 /* Навигация */
 
 .header {
@@ -190,16 +200,6 @@ img {
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
-}
-
-.list-grid {
-  display: flex;
-  flex-wrap: wrap;
-  gap: var(--indent-grid);
-}
-
-.grid-cards {
-  flex-basis: calc((100% - var(--indent-grid) * (var(--item) - 1)) / var(--item));
 }
 
 .about-title {
